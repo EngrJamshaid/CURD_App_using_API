@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Header */
+header {
+  background-color: brown;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+}
+
+/* Insert Button */
+.insert-btn {
+  width: 100%;
+  background-color: blueviolet;
+  padding: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.insert-btn .btn {
+  background-color: brown;
+  color: white;
+  padding: 7px 12px;
+  border: none;
+  margin-left: 12px;
+  /* position: relative;
+  top: 50%;
+  right: 20px; */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.insert-btn .btn:hover {
+  background-color: #8b0000;
+}
+
+/* Modal Container */
+.complete {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none; /* Initially hidden */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Form Box */
+.model-box {
+  background-color: #fff;
+  padding: 30px 40px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  min-width: 350px;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Form Label Groups */
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-label label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Input Fields */
+.form-label input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.form-label input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+/* Table Container */
+.table-container {
+  width: 95%;
+  margin: 40px auto;
+  overflow-x: auto;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+table th, table td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Buttons in Table */
+.edit-btn, .delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #28a745;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.insert-btn {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#openForm{
+    margin-top: 12px;
+}
+
+
+  table {
+    font-size: 14px;
+  }
+
+  .table-container {
+    overflow-x: scroll;
+  }
+}

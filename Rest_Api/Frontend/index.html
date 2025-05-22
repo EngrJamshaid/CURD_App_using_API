@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<header>
+  <h1>Welcome To PHP Rest Api & Javascript</h1>
+</header>
+
+<div class="insert-btn">
+    <p style="color: white;">A CRUD application using PHP API and JavaScript Fetch enables users to Create, Read, Update, and Delete data dynamically. JavaScript sends requests to the PHP backend, which handles database operations efficiently.
+</p>
+  <button class="btn" id="openForm">Insert</button>
+</div>
+<!-- insert data -->
+<div class="complete" id="formContainer">
+  <div class="model-box">
+    <span class="close-btn" id="closeForm">&times;</span>
+    <form action="" id="form-data">
+      <div class="form-label">
+        <label for="fname">Name</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="form-label">
+        <label for="Age">Age</label>
+        <input type="number" name="age" id="age">
+      </div>
+      <div class="form-label">
+        <label for="city">City</label>
+        <input type="text" name="city" id="city">
+      </div>
+      <div>
+        <input type="submit" value="Insert">
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Table Section -->
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="data-table">
+<!-- dynamic data come here -->
+ 
+    </tbody>
+  </table>
+</div>
+
+
+
+<!-- Edit Modal -->
+<div class="complete" id="editFormContainer">
+  <div class="model-box">
+    <span class="close-btn" id="closeEditForm">&times;</span>
+    <form id="edit-form-data">
+      <div class="form-label">
+        <label for="edit-name">Name</label>
+        <input type="text" name="name" id="edit-name">
+      </div>
+      <div class="form-label">
+        <label for="edit-age">Age</label>
+        <input type="number" name="age" id="edit-age">
+      </div>
+      <div class="form-label">
+        <label for="edit-city">City</label>
+        <input type="text" name="city" id="edit-city">
+      </div>
+      <div>
+        <input type="submit" value="Update">
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+<script src="data.js"></script>
+</body>
+</html>
